@@ -28,7 +28,7 @@ public class HttpTriggerJava {
 
 
         if (character == null) {
-            return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
+            return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please choose a character").build();
         } else {
             return request.createResponseBuilder(HttpStatus.OK).body("Here is a story about a " + character + " in a " + location).build();
         }

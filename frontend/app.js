@@ -2,8 +2,8 @@
 const page1 = document.getElementById("page1");
 const page2 = document.getElementById("page2");
 const functionKey = 'SNLWnbx7O3ezNHJOgEicu4u9PzrRw6g06At13zcqBYWyAzFuAewBtw==';
-const base_url = `http://localhost:41413/api/HttpTriggerJava?code=${functionKey}`
-//const base_url = `https://app-azure-function-examples-230509115615.azurewebsites.net/api/HttpTriggerJava?code=${functionKey}`
+// const base_url = `http://localhost:41413/api/HttpTriggerJava?code=${functionKey}`
+const base_url = `https://app-azure-function-examples-230509115615.azurewebsites.net/api/HttpTriggerJava?code=${functionKey}`
 
 let firstOption = null;
 
