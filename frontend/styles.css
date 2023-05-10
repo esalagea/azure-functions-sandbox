@@ -1,0 +1,21 @@
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Add a container class for the images */
+.image-container {
+    display: inline-block;
+    width: calc(100% / 10 - 10px); /* Make each image container take up less than a third of the screen */
+    margin: 25px;
+    box-sizing: border-box;
+}
+
+/* Add a class for the images */
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures that the aspect ratio of the image is maintained */
+}

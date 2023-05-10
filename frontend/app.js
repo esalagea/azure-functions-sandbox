@@ -37,10 +37,14 @@ page2.addEventListener("click", async (event) => {
 
             if (response.ok) {
                 const data = await response.text();
-                alert(`Function response: ${data}`);
+                // Navigate to the result page with the function response as a URL parameter
+                window.location.href = `story.html?response=${encodeURIComponent(data)}`;
             } else {
                 alert(`Error: ${response.status} ${response.statusText}`);
             }
+
+
+
         } catch (error) {
             console.error("Error:", error);
             alert(`Error: ${error.message}`);
